@@ -1,5 +1,4 @@
-const gulp = require('gulp'); 
-const {src, dest, parallel, series, watch} = require('gulp');
+const {src, dest, parallel, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
@@ -13,11 +12,11 @@ const include = require('gulp-file-include');
 
 let path = {
     build: {
-        html: "access/",
-        css: "access/css/",
-        js: "access/js/",
-        img: "access/images/",
-        fonts: "access/fonts/"
+        html: "docs/",
+        css: "docs/css/",
+        js: "docs/js/",
+        img: "docs/images/",
+        fonts: "docs/fonts/"
     },
     src: {
         html: "src/*.html",
@@ -69,7 +68,7 @@ function styles() {
         path.src.css
     ])
     .pipe(sass())
-    .pipe(concat('styles.css'))
+    .pipe(concat('style.css'))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
 	.pipe(cleancss( { level: { 1: { specialComments: 0 } }} ))
 	.pipe(dest(path.build.css))
