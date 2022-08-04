@@ -64,9 +64,7 @@ function images() {
 }
 
 function styles() {
-    return src([
-        path.src.css
-    ])
+    return src([path.src.css])
     .pipe(sass())
     .pipe(concat('style.css'))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
@@ -83,7 +81,7 @@ function scripts() {
 }
 
 function startwatch() {
- 
+    // watch(path.watch.fonts, fonts);
     watch(path.watch.html, html);
 	watch(path.watch.css, styles);
     watch(path.watch.js, scripts);

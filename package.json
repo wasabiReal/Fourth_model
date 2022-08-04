@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/wasabiReal/Fourth_model/issues"
   },
-  "homepage": "https://github.com/wasabiReal/Fourth_model#readme"
+  "homepage": "https://github.com/wasabiReal/Fourth_model#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
 }

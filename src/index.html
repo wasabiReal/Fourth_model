@@ -5,17 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <title>OXIT Model 4</title>
 </head>
 <body>
     <header>
         <div class="container">
-
+            <div class="header__content">
+                <div class="logo">
+                <img src="./images/logo_Oxit.png" alt="Logo picture" height="80px">
+            </div>
+            <nav>
+                <ul>
+                    <li>Головна</li>
+                    <li>Програма курсу</li>
+                    <li>Відгуки про курс</li>
+                    <li>Відео</li>
+                    <li>Ментори</li>
+                    <li id="menu__bid"><a>Подати заявку</a></li>
+                </ul>
+            </nav>
+            </div>
         </div>
     </header>
     <main>
         <div class="container">
-            <h1>hello world!!!</h1>
+            <div class="content__container">
+                <div class="registration__container">
+                    <div class="about__courses">
+                        <h1>Курси програмування у Луцьку</h1>
+                        <span>
+                            Сфера ІТ розвивається максимально швидко. Зараз дуже
+                            популярно здобувати освіту, що повязана з ІТ. Існує лише
+                            одна проблема - брак дійсно кваліфікованих спеціалістів в
+                            Україні. Під час навчання в університеті ми отримуємо мало
+                            правктики і "живих", реальних кейсів. ІТ школа ОхІТ створила
+                            таку методику навчання, при якій за короткий час ви отримаєте
+                            необхідні знання, щоб стати ІТ спеціалістом. Чекаємо вас на наших
+                            курсах програмування в Луцьку. Старт наступного курсу 3 серпня.
+                        </span>
+                    </div>
+                    <div class="registration__form">
+                        <h2>Зареєструватися на курси</h2>
+                        <form action="">
+                            <label for="user_firstname">Ім'я</label><br>
+                            <input type="text" name="user_firstname" placeholder="Ім'я"><br>
+                            <label for="user_firstname">Прізвище</label><br>
+                            <input type="text" name="user_firstname" placeholder="Прізвище"><br>
+                            <label for="user_firstname">Мене більше цікавить</label><br>
+                            <input type="text" name="user_firstname" placeholder="Developer or QA"><br>
+                            <label for="user_firstname">Номер телефону</label><br>
+                            <input type="text" name="user_firstname" placeholder="Номер телефону: +38 ХХХ ХХ ХХ ХХХ"><br>
+                            <label for="user_firstname">Email</label><br>
+                            <input type="text" name="user_firstname" placeholder="Email"><br>
+                            <div class="radio__container">
+                                <input type="radio" name="" id="">
+                                <label for="">Я погоджуюся із <a href="google.com" target="_blank">Політикою Конфіденційності</a></label>
+                            </div>
+                            <div class="submit__button">
+                                <input type="submit" name="submit__button__form" id="" value="ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
