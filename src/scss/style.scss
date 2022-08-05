@@ -123,6 +123,8 @@ $fz:100px;
 $silver__dark: #666666;
 $button__color: #337ab7;
 $background__col: #f7f7f7;
+$light__blue: #3498db;
+$dot__col: #b3b3b3;
 
 *{
     box-sizing: border-box;
@@ -132,7 +134,7 @@ body{
     font-size: 16px;
     line-height: 22px;
     margin: auto;
-    height: 150vh;
+    height: 300vh;
     background-color: $background__col;
 }
 .container{
@@ -146,6 +148,8 @@ header{
     -webkit-box-shadow: 0px 1px 30px -20px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 1px 30px -20px rgba(0,0,0,0.75);
     box-shadow: 0px 1px 30px -20px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
     .header__content{
         display: flex;
         justify-content: space-between;
@@ -176,13 +180,14 @@ header{
         }
     }
 }
+main{
+    margin-top: 160px;
+}
 .content__container{
     .registration__container{
         display: flex;
         justify-content: space-between;
         gap: 60px;
-        margin-top: 60px;
-
         font-weight: 100;
         .registration__form {
             form{
@@ -190,6 +195,11 @@ header{
                 .submit__button{
                     display: flex;
                     margin-top: 20px;
+                }
+                label::after{
+                    margin-left: 2px;
+                    content: "*";
+                    color: red;
                 }
                 input[type = submit]{
                     margin: 0 auto;
@@ -227,27 +237,174 @@ header{
                     }
                 }
             }
-        h2{
-            font-weight: 600;
-            font-size: 22px;
-            margin-bottom: 22px;
+            h2{
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 22px;
+            }
         }
-    }
         .about__courses{
             margin-top: auto;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             text-align: center;
             h1{
                 font-weight: 600;
                 font-size: 32px;
-                margin-bottom: 45px;
+                margin-bottom: 15px;
             }
-            span{
+            .about__courses__text{
                 padding: 30px;
+                p{
                 line-height: 32px;
                 color: $silver__dark;
+                }
             }
         }
     }
-
+    .course__container{
+        margin-top: 100px;
+        .course__developing{
+            h2{
+                text-align: center;
+                font-size: 34px;
+            }
+            .wrapper__courses{
+                display: flex;
+                justify-content: space-around;
+                gap: 70px;
+                text-align: center;
+                hr{
+                    margin-top: 24px;
+                    margin-bottom: 36px;
+                    background-color: $button__color;
+                    width: 100%;
+                    height: 1px;
+                }
+                img{
+                    margin: 30px;
+                }
+                span{
+                    color: $silver__dark;
+                    font-weight: 100;
+                }
+                h3{
+                    color: $silver__dark;
+                    font-size: 23px;
+                }
+                div{
+                    max-width: 350px;
+                }
+                .course__second{
+                    max-width: 320px;
+                }
+            }
+        }
+    }
+}
+.course__info__container{
+    width: 100%;
+    margin-top: 100px;
+    background-color: $light__blue;
+    .course__info{
+        width: 100%;
+        height: 310px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        .info__block{
+            text-align: center;
+            margin: auto 0;
+            .number{
+                font-size: 24px;
+                font-weight: normal;
+                margin-top: 36px;
+                margin-bottom: 26px;
+            }
+            p{
+                font-weight: 100;
+                margin: 0;
+            }
+            img{
+            width: 80px;
+            height: 60px;
+            margin: 0;
+            }
+        }
+    }
+}
+.feedback__courses__container{
+    .feedback__courses{
+        h2{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        .slider{
+            padding: 0 200px;
+        }
+        .slider__item{
+            .quote p{
+                position: relative;
+                padding: 30px 50px;
+                text-align: center;
+                font-weight: 100;
+                color: $silver__dark;
+            }
+            .quote::after{
+                content: "";
+                background: url("../images/icons/quot_2.png");
+                width: 41px;
+                height: 41px;
+                float: right;
+                margin-top: -50px;
+                
+            }
+            .quote::before{
+                content: "";
+                background: url("../images/icons/quot.png");
+                width: 41px;
+                height: 41px;
+                float: left;
+            }
+            .author{
+                margin-top: 20px;
+                text-align: center;
+                .author_spec{
+                    font-weight: 100;
+                    font-style: italic;
+                    color: $silver__dark;
+                }
+            }
+        }
+        .slider .slick-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slider .slick-dots li{
+            list-style-type: none;
+            margin: 0 7px;
+        }
+        .slider .slick-dots .slick-active button{
+            background-color: $silver__dark;
+        }
+        .slider .slick-dots button{
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            background-color: $dot__col;
+            border-radius: 50%;
+        }
+        .slick-track{
+            display: flex;
+        }
+        .slick-list{
+            overflow: hidden;
+        }
+    }
+   
+}
+.youtube__video{
+    margin-top: 100px;
 }

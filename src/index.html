@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- CSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <title>OXIT Model 4</title>
 </head>
 <body>
@@ -35,7 +33,8 @@
                 <div class="registration__container">
                     <div class="about__courses">
                         <h1>Курси програмування у Луцьку</h1>
-                        <span>
+                        <div class="about__courses__text">
+                            <p>
                             Сфера ІТ розвивається максимально швидко. Зараз дуже
                             популярно здобувати освіту, що повязана з ІТ. Існує лише
                             одна проблема - брак дійсно кваліфікованих спеціалістів в
@@ -44,7 +43,8 @@
                             таку методику навчання, при якій за короткий час ви отримаєте
                             необхідні знання, щоб стати ІТ спеціалістом. Чекаємо вас на наших
                             курсах програмування в Луцьку. Старт наступного курсу 3 серпня.
-                        </span>
+                        </p>
+                        </div>
                     </div>
                     <div class="registration__form">
                         <h2>Зареєструватися на курси</h2>
@@ -61,13 +61,144 @@
                             <input type="text" name="user_firstname" placeholder="Email"><br>
                             <div class="radio__container">
                                 <input type="radio" name="" id="">
-                                <label for="">Я погоджуюся із <a href="google.com" target="_blank">Політикою Конфіденційності</a></label>
+                                <label for="">Я погоджуюся із <a href="https://www.shorturl.at/iRU69" target="_blank">Політикою Конфіденційності</a></label>
                             </div>
                             <div class="submit__button">
                                 <input type="submit" name="submit__button__form" id="" value="ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ">
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="course__container">
+                    <div class="course__developing">
+                        <h2>Курс «Розробка сайтів»</h2>
+                        <div class="wrapper__courses">
+                            <div class="course__first">
+                                <img src="./images/icons/course-icon-1.png" alt="WordPress">
+                                <h3>Розробка сайтів на WordPress</h3>
+                                <hr>
+                                <span>
+                                    Курс складається з коротних навчальних відео, на яких
+                                    ти пізнаєш основи WordPress, навчишся створювати
+                                    сайти різної складності: від блогів до інтернет-магазинів. 
+                                    Всі знання закріпиш за допомогою тестових завдань.
+                                </span>
+                            </div>
+                            <div class="course__second">
+                                <img src="./images/icons/course-icon-2.png" alt="Drupal">
+                                <h3>Розробка сайтів на Drupal 8</h3>
+                                <hr>
+                                <span>
+                                    Для створення чудових сайтів на Drupal 8, цеглинка за цегликою,
+                                    ти пізнаєш секрети основних та додаткових 
+                                    Drupal-модулів(Views, Rules, Panels, Devel, Paragraph та багатьох інших).
+                                </span>
+                            </div>
+                            <div class="course__third">
+                                <img src="./images/icons/course-icon-3.png" alt="QA">
+                                <h3>Ознайомлення з тестуванням</h3>
+                                <hr>
+                                <span>
+                                    Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
+                                    Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне,
+                                    системне, тестування швидкодії тощо).
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="course__info__container">
+                <div class="container">
+                    <div class="course__info">
+                        <div class="info__block">
+                            <img src="./images/icons/statistic-icon-1.png" alt="Course count">
+                            <p class="number">25</p>
+                            <p>курсів організовано</p>
+                        </div>
+                        <div class="info__block">
+                            <img src="./images/icons/statistic-icon-2.png" alt="Course hours">
+                            <p class="number">836</p>
+                            <p>годин занять проведено</p>
+                        </div>
+                        <div class="info__block">
+                            <img src="./images/icons/statistic-icon-3.png" alt="Course sudents count">
+                            <p class="number">500</p>
+                            <p>студентів навчено</p>
+                        </div>
+                        <div class="info__block">
+                            <img src="./images/icons/statistic-icon-4.png" alt="Course students have work">
+                            <p class="number">120</p>
+                            <p>випускників курсів працевлаштовано</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container">
+                <div class="feedback__courses__container">
+                    <div class="feedback__courses">
+                        <h2>Що кажуть студенти наших курсів:</h2>
+                        <div class="slider">
+                            <div class="slider__item">
+                                <div class="quote">
+                                    <p>Під час проходження курсів Drupal у школі ОхІТ я навчився створювати не досить
+                                        складні сайти на знайшов справу, я хочу займатись. Після успішного завершення курсів
+                                        мені надали можливість продовжити навчання вже в якості Intern Site Builder.
+                                        Зараз можу сказати, що Drupal та ОхІТ повністю змінили моє життя.
+                                    </p>
+                                </div>
+                                <div class="author">
+                                    <div class="author__name">
+                                        <p>Коля</p>
+                                    </div>
+                                    <div class="author_spec">
+                                        <p>Drupal-девелопер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="quote">
+                                    <p>Під час проходження курсів Drupal у школі ОхІТ я навчився створювати не досить
+                                        складні сайти на знайшов справу, я хочу займатись. Після успішного завершення курсів
+                                        мені надали можливість продовжити навчання вже в якості Intern Site Builder.
+                                        Зараз можу сказати, що Drupal та ОхІТ повністю змінили моє життя.
+                                    </p>
+                                </div>
+                                <div class="author">
+                                    <div class="author__name">
+                                        <p>Коля</p>
+                                    </div>
+                                    <div class="author_spec">
+                                        <p>Drupal-девелопер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="quote">
+                                    <p>Під час проходження курсів Drupal у школі ОхІТ я навчився створювати не досить
+                                        складні сайти на знайшов справу, я хочу займатись. Після успішного завершення курсів
+                                        мені надали можливість продовжити навчання вже в якості Intern Site Builder.
+                                        Зараз можу сказати, що Drupal та ОхІТ повністю змінили моє життя.
+                                    </p>
+                                </div>
+                                <div class="author">
+                                    <div class="author__name">
+                                        <p>Коля</p>
+                                    </div>
+                                    <div class="author_spec">
+                                        <p>Drupal-девелопер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="youtube__video">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam molestiae mollitia, adipisci 
+                    nostrum hic saepe consectetur ea omnis reprehenderit repellendus cumque sunt quae. Minima, 
+                    quis nihil? Aliquid temporibus eaque dolorem.
                 </div>
             </div>
         </div>
@@ -77,5 +208,10 @@
 
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    
 </body>
 </html>

@@ -29,7 +29,8 @@ let path = {
         html: "src/**/*.html",
         css: "src/scss/**/*.scss",
         js: "src/js/**/*.js",
-        img: "src/images/**/*"
+        img: "src/images/**/*",
+        fonts: "src/fonts/**/*"
     }
 }
 
@@ -81,7 +82,7 @@ function scripts() {
 }
 
 function startwatch() {
-    // watch(path.watch.fonts, fonts);
+    watch(path.watch.fonts, fonts);
     watch(path.watch.html, html);
 	watch(path.watch.css, styles);
     watch(path.watch.js, scripts);
