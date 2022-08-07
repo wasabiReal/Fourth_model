@@ -12,18 +12,38 @@
         <div class="container">
             <div class="header__content">
                 <div class="logo">
-                <img src="./images/logo_Oxit.png" alt="Logo picture" height="80px">
+                    <img src="./images/logo_Oxit.png" alt="Logo picture" height="80px">
+                </div>
+                <nav>
+                    <ul>
+                        <li>Головна</li>
+                        <li><a href="#program__course">Програма курсу</a></li>
+                        <li><a href="#coursefeedback">Відгуки про курс</a></li>
+                        <li><a href="#video">Відео</a></li>
+                        <li><a href="#mentorslider">Ментори</a></li>
+                        <li id="menu__bid"><a href="#register">Подати заявку</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li>Головна</li>
-                    <li>Програма курсу</li>
-                    <li>Відгуки про курс</li>
-                    <li>Відео</li>
-                    <li>Ментори</li>
-                    <li id="menu__bid"><a>Подати заявку</a></li>
-                </ul>
-            </nav>
+        </div>
+        <div class="header__container__mobile">
+            <div class="header__content__mobile">
+                <div class="logo">
+                    <img src="./images/logo_Oxit.png" alt="Logo picture" height="60px">
+                </div>
+                <div class="burger__menu" onclick="burger();">
+                    <img src="./images/icons/burger-icon.png" alt="menu button" height="15px">
+                </div>
+            </div>
+            <div class="mlinks__burger" id="mlinks" style="display: none;">
+                    <ul>
+                        <li>Головна</li>
+                        <li><a href="#program__course">Програма курсу</a></li>
+                        <li><a href="#coursefeedback">Відгуки про курс</a></li>
+                        <li><a href="#video">Відео</a></li>
+                        <li><a href="#mentorslider">Ментори</a></li>
+                        <li id="menu__bid"><a href="#register">Подати заявку</a></li>
+                    </ul>
             </div>
         </div>
     </header>
@@ -46,7 +66,7 @@
                         </p>
                         </div>
                     </div>
-                    <div class="registration__form">
+                    <div class="registration__form" id="register">
                         <h2>Зареєструватися на курси</h2>
                         <form action="">
                             <label for="user_firstname">Ім'я</label><br>
@@ -60,7 +80,7 @@
                             <label for="user_firstname">Email</label><br>
                             <input type="text" name="user_firstname" placeholder="Email"><br>
                             <div class="radio__container">
-                                <input type="radio" name="" id="">
+                                <input type="checkbox" name="" id="">
                                 <label for="">Я погоджуюся із <a href="https://www.shorturl.at/iRU69" target="_blank">Політикою Конфіденційності</a></label>
                             </div>
                             <div class="submit__button">
@@ -73,7 +93,7 @@
         </div>
         <div class="back_con">
             <div class="container">
-                <div class="course__container">
+                <div class="course__container" id="program__course">
                     <div class="course__developing">
                         <h2>Курс «Розробка сайтів»</h2>
                         <div class="wrapper__courses">
@@ -103,6 +123,39 @@
                                 <h3>Ознайомлення з тестуванням</h3>
                                 <hr>
                                 <span>
+                                    Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
+                                    Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне,
+                                    системне, тестування швидкодії тощо).
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__developing__slider">
+                        <h2>Курс «Розробка сайтів»</h2>
+                        <div class="slider__course">
+                            <div class="slider__item">
+                                <img src="./images/icons/course-icon-1.png" alt="WordPress">
+                                <h3>Розробка сайтів на WordPress</h3>
+                                <hr>
+                                <span class="text">
+                                    Курс складається з коротних навчальних відео, на яких ти пізнаєш основи WordPress, навчишся створювати сайти різної складності: від блогів до інтернет-магазинів. Всі знання закріпиш за допомогою тестових завдань.
+                                </span>
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/icons/course-icon-2.png" alt="Drupal">
+                                <h3>Розробка сайтів на Drupal 8</h3>
+                                <hr>
+                                <span class="text">
+                                    Для створення чудових сайтів на Drupal 8, цеглинка за цегликою,
+                                    ти пізнаєш секрети основних та додаткових 
+                                    Drupal-модулів(Views, Rules, Panels, Devel, Paragraph та багатьох інших).
+                                </span>
+                            </div>
+                            <div class="slider__item">
+                                <img src="./images/icons/course-icon-3.png" alt="QA">
+                                <h3>Ознайомлення з тестуванням</h3>
+                                <hr>
+                                <span class="text">
                                     Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
                                     Також QA-спеціаліст розкаже про види тестування(функціональне, регресивне,
                                     системне, тестування швидкодії тощо).
@@ -143,7 +196,7 @@
             </div>
         <div class="back_con">
             <div class="container">
-                <div class="feedback__courses__container">
+                <div class="feedback__courses__container" id="coursefeedback">
                     <div class="feedback__courses">
                         <h2>Що кажуть студенти наших курсів:</h2>
                         <div class="slider">
@@ -206,7 +259,7 @@
             </div>
         </div>
             <div class="container">
-                <div class="youtube__video">
+                <div class="youtube__video" id="video">
                     <h3>Відео</h3>
                     <div class="video__container">
                         <p>
@@ -219,7 +272,7 @@
             </div>
         <div class="back_con">
             <div class="container">
-                <div class="mentors__container">
+                <div class="mentors__container" id="mentorslider">
                     <div class="mentors">
                         <h3>Наші ментори</h3>
                         <div class="slider">
@@ -337,7 +390,7 @@
             </div>
             <div class="copyright__container">
                 <div class="copyrigth">
-                    <a>&#169; Copyright 2018-2020 InternetDevels</a>
+                    <a href="#">&#169; Copyright 2018-2020 InternetDevels</a>
                     <p>Умови політики конфіденційності</p>
                 </div>
             </div>

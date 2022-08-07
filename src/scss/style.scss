@@ -134,7 +134,6 @@ body{
     font-size: 16px;
     line-height: 22px;
     margin: auto;
-    height: 400vh;
     background-color: $background__col;
 }
 .container{
@@ -154,6 +153,8 @@ header{
     box-shadow: 0px 1px 30px -20px rgba(0,0,0,0.75);
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 99999;
     .header__content{
         display: flex;
@@ -183,6 +184,10 @@ header{
             color: $button__color;
             }
         }
+        li a{
+            color: inherit;
+        }
+        
     }
 }
 main{
@@ -233,13 +238,11 @@ main{
                             color: $button__color;
                         }
                     }
-                    input[type = radio]{
+                    input[type = checkbox]{
                         display: block;
-                        width: 2%;
-                        border: 1px solid black;
+                        width: 6%;
                         border-radius: 3px;
                         padding: 7px;
-                        -webkit-appearance: none;
                     }
                 }
             }
@@ -323,8 +326,8 @@ main{
             .number{
                 font-size: 24px;
                 font-weight: normal;
-                margin-top: 36px;
-                margin-bottom: 26px;
+                margin-top: 30px;
+                margin-bottom: 22px;
             }
             p{
                 font-weight: 100;
@@ -550,3 +553,12 @@ main{
         }
     }
 }
+.course__developing__slider{
+    display: none;
+}
+.header__container__mobile{
+    display: none;
+}
+
+
+@import "adaptive.scss";

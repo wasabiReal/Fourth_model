@@ -1,0 +1,362 @@
+@media (max-width: 1220px) {
+    .container{
+        max-width: 90%;
+    }
+    .video__container iframe{
+        max-width: 90%;
+    }
+    .registration__form{
+        max-width: 40%;
+        form{
+            input{
+                max-width: 90%;
+            }
+        }
+    }
+    .content__container .registration__container .registration__form form input[type=submit]{
+        margin: 0;
+    }
+    .mentor__speech{
+        font-size: 1em;
+        line-height: 16px;
+    }
+    .mentors__container .mentors .slider__item .mentor__info hr{
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    .feedback__courses__container .feedback__courses .slider .slick-dots{
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    .course__container .course__developing {
+        h2{
+            font-size: 26px;
+        }
+        .wrapper__courses{
+            gap: 50px;
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 90%;
+        margin: 0;
+    }
+    .header__content nav{
+        max-width: 650px;
+    }
+    .header__content nav li{
+        padding: 7px;
+    }
+    .content__container .registration__container .about__courses h1{
+        font-size: 28px;
+    }
+    .feedback__courses__container .feedback__courses .slider{
+        padding: 0px;
+    }
+    .course__info__container .course__info .info__block{
+        width: 40%;
+    }
+    .mentor__speech{
+        font-size: 1em;
+        line-height: 14px;
+    }
+    .mentor__image img{
+        width: 200px;
+    }
+    .mentors__container .mentors .slider__item .mentor__info hr{
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+}
+@media (max-width: 850px) {
+    .container{
+        max-width: 75%;
+        margin: 0;
+    }
+    header .container{
+        margin: 0 auto;
+        max-width: 80%;
+        // display: -webkit-box;
+        gap: 20px;
+    }
+    header .header__content{
+        justify-content: start;
+    }
+    .header__content nav li{
+        font-size: 0.8em;
+    }
+    header nav ul li{
+        padding: 8px;
+    }
+    .course__developing{
+        display: none;
+    }
+    .about__courses{
+        width: 350px;
+    }
+    .content__container .registration__container{
+        // gap: 20px;
+        justify-content: space-around;
+        .about__courses{
+            padding: 0;
+            margin: auto 10px;
+        }
+        .registration__form{
+            max-width: 50%;
+        }
+    }
+    .content__container .registration__container .about__courses .about__courses__text{
+        padding: 0;
+    }
+    .mentors__container .mentors .slider__item{
+        padding: 0;
+        gap: 30px;
+    }
+    .mentor__image{
+        text-align: center;
+        margin: auto 0;
+    }
+    .course__developing__slider{
+        display: block;
+        text-align: center;
+        img{
+            margin: 0 auto;
+        }
+        h2{
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+        hr{
+            margin-top: 24px;
+            margin-bottom: 36px;
+            background-color: $button__color;
+            width: 100%;
+            height: 1px;
+            opacity: 0.5;
+            line-height: 10px;
+        }
+        .slider__course{
+            padding: 0 20px;
+            display: block;
+        }
+        .slider__item{
+            .text {
+                position: relative;
+                text-align: left;
+                font-weight: 100;
+                color: $silver__dark;
+            }
+        }
+        .slider__course .slick-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .slider__course .slick-dots li{
+            list-style-type: none;
+            margin: 0 7px;
+        }
+        .slider__course .slick-dots .slick-active button{
+            background-color: $silver__dark;
+        }
+        .slider__course .slick-dots button{
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            background-color: $dot__col;
+            border-radius: 50%;
+        }
+        .slick-track{
+            display: flex;
+            gap: 10px;
+        }
+        .slick-list{
+            overflow: hidden;
+        }
+    }
+}
+@media (max-width: 425px) {
+    main{
+        margin-top: 100px;
+    }
+    h2, h3{
+        font-size: 20px !important;
+    }
+    .container{
+        max-width: 90%;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .about__courses{
+        max-width: 90%;
+    }
+    .container .content__container .registration__container{
+        display: flex;
+        flex-direction: column;
+        .registration__form{
+            max-width: 100%;
+            h2{
+                text-align: center;
+            }
+            form{
+                input{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .content__container .registration__container .about__courses {
+        h1{
+            font-size: 20px;
+        }
+        .about__courses__text p{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0;
+        }
+    }
+    .course__developing__slider .slider__course{
+        padding: 0;
+    }
+    .course__info__container .course__info{
+        flex-wrap: wrap;
+        .info__block{
+            width: 50%;
+            .number{
+                margin: 5px;
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    footer .footer__container {
+        .copyright__container{
+            height: 100px;
+            .copyrigth{
+                margin-top: 20px;
+            }
+        }
+        .contacts__container{
+        width: 100%;
+        height: 300px;
+        flex-wrap: wrap;
+        padding: 0 5%;
+            .link{
+                width: 50%;
+                .number{
+                    margin: 5px;
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                img{
+                    width: 25%;
+                    height: 25%;
+                }
+            }
+        }
+    }
+    .feedback__courses__container .feedback__courses .slider__item .quote::before,
+    .feedback__courses__container .feedback__courses .slider__item .quote::after{    
+        transform: scale(0.5);
+    }
+    .feedback__courses__container .feedback__courses .slider__item .quote::after{
+        margin-top: -25px;
+    }
+    .feedback__courses__container .feedback__courses .slider__item .quote p{
+        padding: 40px 0px;
+    }
+    .feedback__courses__container .feedback__courses .slider .slick-dots button{
+        width: 15px;
+        height: 15px;
+        margin-top: 20px;
+    }
+    .slick-dots button{
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .youtube__video .video__container{
+        font-size: 16px;
+        margin: 15px 0;
+        iframe{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .mentors__container .mentors {
+        padding: 0;        
+        .slider__item{
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 0;
+        }
+    }
+    .mentors__container .mentors .slider__item .mentor__info{
+        padding: 0;
+        text-align: center;
+        hr{
+            margin-top: 5px;
+        }
+        .mentor__name{
+            font-size: 18px;
+        }
+        .mentor__speech p{
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+    header .header__container__mobile{
+        width: 95%;
+        margin: 0 10px;
+        display: block;
+        padding: 5px;
+        .header__content__mobile{
+            display: flex;
+            justify-content: space-between;
+            .burger__menu{
+                margin: auto 0;
+                padding: 5px;
+                background-color: $button__color;
+                border-radius: 10%;
+                img{
+                    margin: auto;
+                    vertical-align: unset;
+                }
+            }
+        }
+        .mlinks__burger{
+            text-align: center;
+            padding-bottom: 15px;
+            ul{
+                display: inline;
+                list-style: none;
+                li{
+                    padding: 10px;
+                    width: 50%;
+                    margin: 0 auto;
+                    a{
+                        color: $silver__dark;
+                    }
+                }
+            }
+            #menu__bid{
+                background-color: $button__color;
+                border-radius: 50px;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    header .container{
+        display: none;
+    }
+}
