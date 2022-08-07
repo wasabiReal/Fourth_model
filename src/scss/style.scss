@@ -559,6 +559,8 @@ main{
 .header__container__mobile{
     display: none;
 }
-
+.slider{
+    cursor: pointer;
+}
 
 @import "adaptive.scss";
