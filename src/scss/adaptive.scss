@@ -1,6 +1,6 @@
 @media (max-width: 1220px) {
     .container{
-        max-width: 90%;
+        width: unset;
     }
     .video__container iframe{
         max-width: 90%;
@@ -42,7 +42,7 @@
 }
 @media (max-width: 1024px) {
     .container{
-        max-width: 90%;
+        width: unset;
         margin: 0;
     }
     .header__content nav{
@@ -74,17 +74,17 @@
 }
 @media (max-width: 850px) {
     .container{
-        max-width: 75%;
+        width: unset;
         margin: 0;
     }
     header .container{
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 90%;
         // display: -webkit-box;
         gap: 20px;
     }
     header .header__content{
-        justify-content: start;
+        justify-content: space-between;
     }
     .header__content nav li{
         font-size: 0.8em;
